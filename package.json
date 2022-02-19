@@ -1,0 +1,11 @@
+{
+  "name": "l-auxilliaire-assurance",
+  "version": "1.0.0",
+  "description": "Extranet d'une agence d'assurance (L'Auxilliaire)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gatien & Bryan & Jerkey",
+  "license": "ISC"
+}
