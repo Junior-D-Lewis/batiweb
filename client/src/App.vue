@@ -25,7 +25,7 @@ import { RouterLink, RouterView } from 'vue-router'
   </div>
 </template>
 
-<style>
+<style scoped>
 @import '@/assets/base.css';
 
 :root {
