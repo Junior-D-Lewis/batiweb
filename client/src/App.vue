@@ -2,12 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
-<<<<<<< HEAD
-n<template>
-=======
-
 <template>
->>>>>>> b0ce20d47d4cf11f35db384516f5ff5f93bc037e
   <div id="menu">
     <header>      
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
