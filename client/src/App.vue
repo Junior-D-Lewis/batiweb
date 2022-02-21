@@ -2,20 +2,48 @@
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
+<<<<<<< HEAD
 n<template>
-  <div id="menu">
-    <header>
-        <RouterLink to="/"><img src="@/assets/logo.jpeg" alt="" class="logo"></RouterLink>
+=======
 
-      <nav>
-        
-        <RouterLink to="/adresse-book">Adresse book</RouterLink>
-        <RouterLink to="/news">News</RouterLink>
-        <RouterLink to="/subscription">Subscription</RouterLink>
-        <RouterLink to="/contract">Contract</RouterLink>
-        <RouterLink to="/tele-insurance">Tele-insurance</RouterLink>
-        <RouterLink to="/login">Login</RouterLink>
-      </nav>
+<template>
+>>>>>>> b0ce20d47d4cf11f35db384516f5ff5f93bc037e
+  <div id="menu">
+    <header>      
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">  
+            <RouterLink to="/"><img src="@/assets/logo.jpeg" alt="Logo" class="logo"></RouterLink>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <form class="d-flex">
+            <a href="" class="nav-link">
+                <RouterLink to="/adresse-book">Adress book</RouterLink>
+            </a>
+            <a href="" class="nav-link">
+              <RouterLink to="/news">News</RouterLink>
+            </a>
+            <a href="" class="nav-link">
+              <RouterLink to="/subscription">Subscription</RouterLink>
+            </a>
+            <a href="" class="nav-link">
+              <RouterLink to="/contract">Contract</RouterLink>
+            </a>
+            <a href="" class="nav-link">
+              <RouterLink to="/tele-insurance">Tele-insurance</RouterLink>
+            </a>
+        </form>
+    </div>
+    <form class="d_flex">
+      <button class="nav-link btn btn-outline-success" type="submit">
+          <RouterLink to="/login">Login</RouterLink>
+      </button>
+    </form>
+  </div>
+</nav>        
   </header>
   <div id="slide">
 
@@ -25,136 +53,8 @@ n<template>
   </div>
 </template>
 
-<style>
+<style scoped>
 @import '@/assets/base.css';
-
-:root {
-  --color-green : #8AB73F;
-  --color-blue : #0069B5;
-  --color-red : #E3000F;
-  --color-white: white;
-  --color-black: #24244A;
-}
-body {
-   margin: 0 2px;
-   padding: 0;
-   background-color: white;
-   color:black;
-   font-size: 3rem;
-   font-family: Arial, sans-serif;
-   letter-spacing: 4px;
-   line-height: 1.15px;
-}
-header {
-   margin: 0 auto;
-   width: 90vw;
-}
-nav {
-  margin-right: 0;
-  text-align: end;
-}
-#menu {
-  margin-top: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  padding: 0;
-  background-color: var(--color-blue);
-  color: var(--color-white);
-  padding-top: 1%;
-}
-
-#slide {
-  height: 60vh;
-  background-color: var(--color-blue);
-}
-#app {
- /* max-width: 1280px; */
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
-
-.logo {
-  width: 5rem;
-  height: 3rem;
-  display: block;
-  margin: 0 2rem 2rem;
-}
-
-a{
-  text-decoration: none;
-  color: var(--color-white);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  
-}
-
-
-
-nav {
-  width: 100%;
-  font-size: 12px;
-   text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  nav {
-    text-align: right;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
+@import '@/assets/bootstrap/css/bootstrap.css';
+/* @import '@/assets/bootstrap/js/bootstrap.js'; */
 </style>
