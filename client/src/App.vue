@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
+
 <template>
   <div id="menu">
     <header>      
@@ -40,9 +41,18 @@ import { RouterLink, RouterView } from 'vue-router'
   </div>
 </nav>        
   </header>
-  <div id="slide">
+  <div class="bg-primary py-4" id="slide" style="height: 70vh;">
 
   </div>
+   <div class="" id="main">
+      
+    </div>
+    <div class="" id="section">
+      
+    </div>
+    <div class="" id="footer">
+      
+    </div>
 
   <RouterView />
   </div>
