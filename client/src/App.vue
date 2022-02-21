@@ -2,7 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
-<template>
+n<template>
   <div id="menu">
     <header>
         <RouterLink to="/"><img src="@/assets/logo.jpeg" alt="" class="logo"></RouterLink>
