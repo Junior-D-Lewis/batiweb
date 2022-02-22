@@ -3,88 +3,34 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-<<<<<<< HEAD
-  <div class="grid m-0" style="--gap:4rem;">
-    <header class="bg-info m-0" style="height:100px">
-        <RouterLink to="/"><img src="@/assets/logo.jpeg" alt="" class="logo"></RouterLink>
-=======
-  <div id="menu">
-    <header>      
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">  
-            <RouterLink to="/"><img src="@/assets/logo.jpeg" alt="Logo" class="logo"></RouterLink>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <form class="d-flex">
-              <RouterLink to="/adresse-book" class="nav-link">Adress book</RouterLink>
-          
-              <RouterLink to="/news" class="nav-link">News</RouterLink>
-           
-              <RouterLink to="/subscription" class="nav-link">Subscription</RouterLink>
-            
-              <RouterLink to="/contract" class="nav-link">Contract</RouterLink>
-            
-              <RouterLink to="/tele-insurance" class="nav-link">Tele-insurance</RouterLink>
-            
-        </form>
-    </div>
-    <form class="d_flex">
-      <button class="nav-link btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+    <div>
+      <header class="bg-info m-0" style="height:80px">
+          <RouterLink to="/"><img src="@/assets/logo.jpeg" alt="" class="logo"></RouterLink>
+
+        <nav>
+          <RouterLink to="/address-book">Adresse book</RouterLink>
+          <RouterLink to="/news">News</RouterLink>
+          <RouterLink to="/subscription">Subscription</RouterLink>
+          <RouterLink to="/contract">Contract</RouterLink>
+          <RouterLink to="/tele-insurance">Tele-insurance</RouterLink>
           <RouterLink to="/login">Login</RouterLink>
-      </button>
-    </form>
-  </div>
-</nav>        
-  </header>
-  <div id="slide">
->>>>>>> cfde1c2a53a71b93a87e9f713ea1d748295b40a5
-
-      <nav>
-        <RouterLink to="/address-book">Adresse book</RouterLink>
-        <RouterLink to="/news">News</RouterLink>
-        <RouterLink to="/subscription">Subscription</RouterLink>
-        <RouterLink to="/contract">Contract</RouterLink>
-        <RouterLink to="/tele-insurance">Tele-insurance</RouterLink>
-        <RouterLink to="/login">Login</RouterLink>
-      </nav>
-      <div class="bg-light" id="acceuille" style="height:80vh">
-      
-    </div>
-  </header>
-
-      <div class="" id="section-aboutUs">
-      
-    </div>  
-    <div class="" id="section-realisation">
-      
-    </div>
-    <div class="" id="section-partner">
-      
-    </div>
-    <div class="" id="section-news">
-      
-    </div>
-    <div class="" id="section-contact">
-      
-    </div>
-    <div class="" id="footer">
-      
-    </div>
-
-  <RouterView />
+        </nav>
+       
+    </header>
+   
 
 
-  </div>
+    <RouterView />
+
+
+    </div>
   
 </template>
 
 <style scoped>
 @import '@/assets/base.css';
-@import '@/assets/bootstrap/css/bootstrap-utilities.min.css';
+@import '@/assets/bootstrap/css/bootstrap.min.css';
 /* remove animation for those who have remove it */
 @media (prefers-reduced-motion: reduce){
     *,*::before,*::after{
@@ -159,12 +105,14 @@ import { RouterLink, RouterView } from 'vue-router'
   padding: 0;
   font-weight: normal;
 }
-
+header >a:first-child{
+  margin:auto
+  ;
+}
 .logo {
   width: 6rem;
   height: 4rem;
   display: block;
-  margin: 0;
 }
 nav{
   display: flex;
@@ -178,8 +126,8 @@ nav > a{
   letter-spacing: 0.15rem;
   display: block;
   z-index: 3;
-  box-shadow: 0rem 0rem 1rem black;
-  line-height:4px;
+  box-shadow: 0rem 0rem 0.5rem lightblue;
+  line-height:20px;
   margin-right: 2rem;
 }
 
@@ -208,7 +156,7 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   display: inline-block;
-  padding: 0 1rem;
+  padding: auto 1rem;
   border-left: 1px solid var(--color-border);
 }
 
@@ -230,14 +178,6 @@ nav a:first-of-type {
 
   header {
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
   }
 
   .logo {
