@@ -16,27 +16,15 @@ import { RouterLink, RouterView } from 'vue-router'
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <form class="d-flex">
-            <a href="" class="nav-link">
-                <RouterLink to="/adresse-book">Adress book</RouterLink>
-            </a>
-            <a href="" class="nav-link">
-              <RouterLink to="/news">News</RouterLink>
-            </a>
-            <a href="" class="nav-link">
-              <RouterLink to="/subscription">Subscription</RouterLink>
-            </a>
-            <a href="" class="nav-link">
-              <RouterLink to="/contract">Contract</RouterLink>
-            </a>
-            <a href="" class="nav-link">
-              <RouterLink to="/tele-insurance">Tele-insurance</RouterLink>
-            </a>
+          <RouterLink to="/adresse-book" class="nav-link">Adress book</RouterLink>
+          <RouterLink to="/news" class="nav-link">News</RouterLink>
+          <RouterLink to="/subscription" class="nav-link">Subscription</RouterLink>
+          <RouterLink to="/contract" class="nav-link">Contract</RouterLink>
+          <RouterLink to="/tele-insurance" class="nav-link">Tele-insurance</RouterLink>
         </form>
     </div>
     <form class="d_flex">
-      <button class="nav-link btn btn-outline-success" type="submit">
-          <RouterLink to="/login">Login</RouterLink>
-      </button>
+          <RouterLink to="/login" class="login btn-outline-primary nav-link">Login</RouterLink>
     </form>
   </div>
 </nav>        
