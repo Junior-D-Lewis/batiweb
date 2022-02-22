@@ -3,12 +3,12 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div class="grid" style="--gap:0.5rem;">
-    <header>
+  <div class="grid m-0" style="--gap:4rem;">
+    <header class="bg-info m-0" style="height:100px">
         <RouterLink to="/"><img src="@/assets/logo.jpeg" alt="" class="logo"></RouterLink>
 
       <nav>
-        <RouterLink to="/adresse-book">Adresse book</RouterLink>
+        <RouterLink to="/address-book">Adresse book</RouterLink>
         <RouterLink to="/news">News</RouterLink>
         <RouterLink to="/subscription">Subscription</RouterLink>
         <RouterLink to="/contract">Contract</RouterLink>
@@ -20,59 +20,35 @@ import { RouterLink, RouterView } from 'vue-router'
     </div>
   </header>
 
-  <RouterView />
-    
-    <div class="" id="section">
+      <div class="" id="section-aboutUs">
+      
+    </div>  
+    <div class="" id="section-realisation">
+      
+    </div>
+    <div class="" id="section-partner">
+      
+    </div>
+    <div class="" id="section-news">
+      
+    </div>
+    <div class="" id="section-contact">
       
     </div>
     <div class="" id="footer">
       
     </div>
+
+  <RouterView />
+
+
   </div>
   
 </template>
 
 <style scoped>
 @import '@/assets/base.css';
- /* ************************ */
-/* Reset */
-/* ************************ */
-/* box sizing */
-*,*::after,*::before{
-    box-sizing: border-box;
-}
-/* reset margins */
-body,h1,h2,h3,h4,h5,p,picture,figure{
-    margin: 0;
-    padding: 0;
-}
-/* default */
-h1,h2,h3,h4,h5,h6,p{
-    font-weight: 400;
-}
-/* body */
-body{
-     line-height: 1.15;
-     min-height: 100vh;
-     font-size: var(--fs-400);
-     font-family: var(--ff-normal);
-     letter-spacing: 4px;
-     background-color: hsl(var(--clr-dark));
-     color: hsl(var(--clr-white));
-}
-section{
-  padding: 1rem 0;
-}
-/* image */
-img,picture{
-    max-width: 1.5;
-    display: block;
-}
-/* form */
-input,button,textarea,select{
-    font: inherit;
-}
-/* table */
+@import '@/assets/bootstrap/css/bootstrap-utilities.min.css';
 /* remove animation for those who have remove it */
 @media (prefers-reduced-motion: reduce){
     *,*::before,*::after{
@@ -85,12 +61,8 @@ input,button,textarea,select{
 /* ****************** */
 /* variables */
 :root{
-    /* colors */
     --flow-space:1rem;
     --gap:5rem;
-    --clr-white:0 0% 100%;
-    --clr-dark:230 35% 7%;
-    --clr-light:231 77% 90%;
     /* font-sizes */
     --fs-400:1.125rem;
     --fs-300:1rem;
@@ -105,30 +77,10 @@ input,button,textarea,select{
     --ff-time: "Time new roman", sans-serif;
    
 }
-/* ************************ */
-/* utilities */
-/* ************************ */
-.flex{
-    display: flex;
-    gap:var(--gap,1rem);
-}
-
-.grid{
-    display: grid;
-    gap:var(--gap,1rem);
-}
-.flow > *:where(:not(:first-child)){
-    margin-top: var(--flow-space,1rem);
-    outline: 1px solid red;
-}
-/* .flow >*:not(:last-child){
-    margin-bottom: var();
-    outline: 1px solid red;
-} */
 .container{
     padding: 0;
     margin: 0 auto;
-    max-width: 86rem;
+    max-width: 100vw;
 }
 
 .sr-only{
@@ -142,40 +94,12 @@ input,button,textarea,select{
     white-space: nowrap;
     border: 0;
 }
-.box{
-    background-color: lightblue;
-    padding: 3rem;
-}
-/* color */
-
-.bg-red{
-    background-color:hsl(var(--clr-dark));}
-.bg-green{background-color:hsl(var(--clr-light));}
-.bg-blue{background-color:hsl(var(--clr-white));}
-.bg-white{background-color:hsl(var(--clr-white));}
-.bg-red{
-    background-color:hsl(var(--clr-dark));}
-
-
-.text-red{
-    background-color:hsl(var(--clr-dark));}
-.text-green{background-color:hsl(var(--clr-light));}
-.text-blue{background-color:hsl(var(--clr-white));}
-.text-white{background-color:hsl(var(--clr-white));}
-.text-red{
-    background-color:hsl(var(--clr-dark));}
 
  /* typography  */
 
 .ff-black{font-family: var(--ff-black);}
 .ff-verd{font-family: var(--ff-verd);}
 .ff-time{font-family: var(--ff-time);}
-
-.letter-spacing-1{letter-spacing: 4.75px;}
-.letter-spacing-2{letter-spacing: 2.7px;}
-.letter-spacing-3{letter-spacing: 2.37px;}
-
-.uppercase { text-transform:uppercase;}
 
 .fs-900{font-size: var(--fs-900);}
 .fs-700{font-size: var(--fs-700);}
@@ -193,26 +117,38 @@ input,button,textarea,select{
     line-height: 1.1;
 }
 
-
-
 #app {
  /* max-width: 1280px; */
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
   font-weight: normal;
 }
 
 .logo {
-  width: 5rem;
-  height: 3rem;
+  width: 6rem;
+  height: 4rem;
   display: block;
-  margin: 0 auto 2rem;
+  margin: 0;
+}
+nav{
+  display: flex;
+  margin-right: 0;
+  justify-content: end;
+}
+nav > a{
+  text-decoration: none;
+  font-family: verdanna;
+  font-weight: bolder;
+  letter-spacing: 0.15rem;
+  display: block;
+  z-index: 3;
+  box-shadow: 0rem 0rem 1rem black;
+  line-height:4px;
+  margin-right: 2rem;
 }
 
-a{
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+a:hover{
+  color:white;
 }
 
 @media (hover: hover) {
@@ -247,7 +183,7 @@ nav a:first-of-type {
 @media (min-width: 1024px) {
   body {
     display: flex;
-    place-items: center;
+
   }
 
   #app {
