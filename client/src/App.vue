@@ -29,7 +29,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </form>
     </div>
     <form class="d_flex">
-      <button class="nav-link btn btn-outline-success" type="submit">
+      <button class="nav-link btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <RouterLink to="/login">Login</RouterLink>
       </button>
     </form>
