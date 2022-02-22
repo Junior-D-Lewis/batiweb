@@ -1,9 +1,5 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
-
 <template>
+<<<<<<< HEAD
   <div id="menu">
     <header>      
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -44,10 +40,18 @@ import { RouterLink, RouterView } from 'vue-router'
 
   <RouterView />
   </div>
+=======
+  <router-view />
+>>>>>>> fcbdceb392e132f789c9b351f4612c9c34ee9c19
 </template>
 
-<style scoped>
-@import '@/assets/base.css';
-@import '@/assets/bootstrap/css/bootstrap.css';
-/* @import '@/assets/bootstrap/js/bootstrap.js'; */
+<script>
+import { RouterLink, RouterView } from 'vue-router'
+export default {
+
+}
+</script>
+
+<style>
+
 </style>
