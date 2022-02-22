@@ -38,6 +38,11 @@ const router = createRouter({
       path: '/login',
       name: 'login',
       component: () => import('../views/Login.vue')
+    },
+    {
+      path: '/myCourtierSpace',
+      name: 'myCourtierSpace',
+      component: () => import('../components/MyCourtierSpace.vue')
     }
   ]
 })
