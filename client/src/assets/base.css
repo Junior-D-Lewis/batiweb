@@ -76,6 +76,46 @@ body {
     --color-black: #24244A;
 }
 
+.bg-blue {
+    background-color: var(--color-blue);
+}
+
+.bg-red {
+    background-color: var(--color-red);
+}
+
+.bg-green {
+    background-color: var(--color-green);
+}
+
+.bg-white {
+    background-color: var(--color-white);
+}
+
+.bg-black {
+    background-color: var(--color-black);
+}
+
+.text-blue {
+    background-color: var(--color-blue);
+}
+
+.text-red {
+    background-color: var(--color-red);
+}
+
+.text-green {
+    background-color: var(--color-green);
+}
+
+.text-white {
+    background-color: var(--color-white);
+}
+
+.text-black {
+    background-color: var(--color-black);
+}
+
 
 /* 
 body {
@@ -185,6 +225,10 @@ nav a:first-of-type {
 
 .logo {
     width: 10%;
+}
+
+RouterLink {
+    text-decoration: none;
 }
 
 
