@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div id="menu">
     <header>      
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -37,12 +36,7 @@
     <div class="" id="footer">
       
     </div>
-
-  <RouterView />
   </div>
-=======
-  <router-view />
->>>>>>> fcbdceb392e132f789c9b351f4612c9c34ee9c19
 </template>
 
 <script>
