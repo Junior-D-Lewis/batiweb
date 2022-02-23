@@ -40,16 +40,22 @@ const router = createRouter({
                 import ('../views/Address-book.vue')
         },
         {
-            path: '/login',
-            name: 'login',
+            path: '/login-client',
+            name: 'login-client',
             component: () =>
-                import ('../components/Login.vue')
+            import ('../components/LoginClient.vue')
         },
         {
             path: '/myClientSpace',
             name: 'myClientSpace',
             component: () =>
-                import ('../views/MyClientSpace.vue')
+                import ('../components/MyClientSpace.vue')
+        },
+        {
+            path: '/myCourtierSpace',
+            name: 'myCourtierSpace',
+            component: () =>
+                import ('../components/MyCourtierSpace.vue')
         }
     ]
 })
