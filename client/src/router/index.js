@@ -49,7 +49,13 @@ const router = createRouter({
             path: '/myClientSpace',
             name: 'myClientSpace',
             component: () =>
-                import ('../views/MyClientSpace.vue')
+                import ('../components/MyClientSpace.vue')
+        },
+        {
+            path: '/myCourtierSpace',
+            name: 'myCourtierSpace',
+            component: () =>
+                import ('../components/MyCourtierSpace.vue')
         }
     ]
 })
