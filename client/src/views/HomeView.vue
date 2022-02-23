@@ -6,97 +6,37 @@
 
   <main class="container">
 
-      <div class="row" id="slide">
-        <div class="col-12">
-          <!-- <picture>
-            <img src="@/assets/logo.jpeg" alt="img">
-          </picture> -->
-          <div class="card card-inverse text-center" style="height:80vh;">
-
-            <!-- Image -->
-            <img class="" src="@/assets/logo.jpeg" alt="Photo of sunset" style="height:75vh;">
-
-            <!-- Text Overlay -->
-            <div class="card-img-overlay text-uppercase" style="position:absolute; margin-top: 20%">
-            <h4 class="card-title">BTP</h4>
-            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum placeat quos alias sint beatae praesentium veritatis ipsa atque, quae reprehenderit culpa officiis expedita fuga voluptas nesciunt ex repellendus impedit doloremque.</p>
-            <p class="card-text"> france paris 2022</p>
+ <div class="bg-primary container-large d-grid gap-2">
+        <div class="row w-50 mx-auto text-center">
+            <span class="mx-auto my-auto" style="width:75vw;"> 
+                <h1 class="h1 fs-1" style="">
+                    Bienvenue sur vos espaces clients
+                </h1>
+            </span>
+        </div>
+        <div  id="bg_espace" class="bg-light row d-grid text-center w-75 gap-3 mx-auto rounded-3">
+            <h2 class="fs-2">
+                Trouvons votre espace client !
+            </h2>
+            <p class="fs-4">Vous etes ?</p>
+            <div role="button" style="background-image: url('@/assets/img-bg-courtier.jpeg' );" class="mb-5 my-auto  btn-courtier btn-outline-primary border border-primary rounded-3 w-50 mx-auto fs-4">
+                <img class="w-25 rounded-circle" src="@/assets/img-user-courtier.jpg" alt="courtier">
+                <br>
+                <b class="fs-6">
+                    COURTIER
+                </b>
             </div>
-
-            <div class="card-body" style="height:75vh;">
-            <span class="text-primary">see more!</span> 
+            <div role="button" style="background-image: url('@/assets/img-bg-client.jpeg' );" class="mb-5 my-auto btn-client  btn-outline-primary border border-primary rounded-3 w-50 mx-auto fs-4">
+                <img class="w-25 rounded-circle" src="@/assets/img-user-client.jpg" alt="client">
+                    <br>
+                    <b class="fs-6">
+                        PROFESSIONNEL BTP
+                    </b>
             </div>
-
-          </div>
-         
-           
         </div>
-       
-      </div>
-      <h2 class="h2 text-success text-uppercase"> About Us </h2>
-     <hr class="hr">
-   
-      <div class="row" id="section-aboutUs">
-        <div class="row">
-
-          <div class="col-6">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat delectus eum molestiae provident ipsum nihil ex, vero repellendus maiores in similique inventore est eius iusto ullam odio recusandae labore repellat.</p>
-             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat delectus eum molestiae provident ipsum nihil ex, vero repellendus maiores in similique inventore est eius iusto ullam odio recusandae labore repellat.</p>
-             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat delectus eum molestiae provident ipsum nihil ex, vero repellendus maiores in similique inventore est eius iusto ullam odio recusandae labore repellat.</p>
-          
-          </div>
-          <div class="col-6">
-            <div class="card card-inverse text-center" style="height:30vh;">
-
-            <!-- Image -->
-            <img class="" src="@/assets/logo.jpeg" alt="Photo of sunset" style="height:30vh;">
-          </div>
-          </div>
-<br>
-        </div>
-        
-        <div class="row">
-          <div class="col-4">
-            <div class="card card-inverse text-center" style="height:30vh;">
-            <!-- Image -->
-            <img class="" src="@/assets/logo.jpeg" alt="Photo of sunset" style="height:30vh;">
-          </div>
-          </div>
-          <div class="col-4">
-            <div class="card card-inverse text-center" style="height:30vh;">
-            <!-- Image -->
-            <img class="" src="@/assets/logo.jpeg" alt="Photo of sunset" style="height:30vh;">
-          </div>
-          </div>
-          <div class="col-4">
-            <div class="card card-inverse text-center" style="height:30vh;">
-            <!-- Image -->
-            <img class="" src="@/assets/logo.jpeg" alt="Photo of sunset" style="height:30vh;">
-          </div>
-          </div>
-        </div>
-      </div>  
-        <h2 class="h2 text-success text-uppercase"> REALISATION </h2>
-     <hr class="hr">
-      <div class="row" id="section-realisation">
-        
-      </div>
-       <h2 class="h2 text-success text-uppercase">PARTNER </h2>
-     <hr class="hr">
-      <div class="row" id="section-partner">
-        
-      </div>
-       <h2 class="h2 text-success text-uppercase"> NEWS </h2>
-     <hr class="hr">
-      <div class="row" id="section-news">
-        
-      </div>
-       <h2 class="h2 text-success text-uppercase"> CONTACT US </h2>
-     <hr class="hr">
-      <div class="row" id="section-contact">
-        
-      </div>
-      <div class="row text-white" id="footer" style="">
+    </div>
+      
+    
         <!-- Remove the container if you want to extend the Footer to full width. -->
 <div class="container my-5">
   <!-- Footer -->
@@ -119,23 +59,7 @@
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Products</a>
-            </h6>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Awards</a>
-            </h6>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Help</a>
+              <a href="#!" class="text-white">REALISATION</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -159,41 +83,17 @@
           <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
-            <h6 class="text-uppercase fw-bold">Company name</h6>
+            <h6 class="text-uppercase fw-bold  letter-spacing-4">BATIWEB</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #7c4dff; height: 2px"
                 />
             <p>
-              Here you can use rows and columns to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint suscipit incidunt eveniet unde enim corporis nobis eaque minima et, eos, earum veniam? Maiores dolor nulla totam fuga est, architecto natus?
             </p>
           </div>
           <!-- Grid column -->
 
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Products</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-            <p>
-              <a href="#!" class="text-dark">MDBootstrap</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">MDWordPress</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">BrandFlow</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">Bootstrap Angular</a>
-            </p>
-          </div>
-          <!-- Grid column -->
 
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -219,7 +119,7 @@
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <div id="image" class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold">Contact</h6>
             <hr
@@ -243,15 +143,13 @@
          class="text-center p-3"
          style="background-color: rgba(0, 0, 0, 0.2)"
          >
-      © 2020 Copyright:
-      <a class="text-dark" href="https://mdbootstrap.com/"
-         >MDBootstrap.com</a
+      © 2022 Copyright:
+      <a class="text-dark" href="#"><i>AllianceTech</i></a
         >
     </div>
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-</div>
 <!-- End of .container -->
       </div>
   </main>
@@ -268,6 +166,11 @@
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+#bg_espace{
+  background-image:url('../assets/img-bg-courtier.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /* ****************** */
 /* variables */
