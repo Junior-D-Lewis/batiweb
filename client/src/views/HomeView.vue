@@ -14,8 +14,8 @@
                     </h1>
                 </span>
             </div>
-            <div  id="bg_espace" class="bg-light row d-grid text-center w-75 gap-3 mx-auto rounded-3">
-                <h2 class="fs-2">
+            <div  id="bg_espace" class="opacity-2 bg-light row d-grid text-center w-75 gap-3 mx-auto rounded-3">
+                <h2 class="fs-2 opacity-1">
                     Trouvons votre espace client !
                 </h2>
                 <p class="fs-4">Vous etes ?</p>
@@ -173,7 +173,7 @@ main{
   background-repeat: no-repeat;
 }
 #bg_espace{
-  opacity: .7 !important;
+
 }
 /* ****************** */
 /* variables */
