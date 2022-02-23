@@ -36,8 +36,8 @@ const router = createRouter({
     },
     {
       path: '/login',
-      name: 'login',
-      component: () => import('../views/Login.vue')
+      name: 'modal',
+      component: () => import('../components/Modal.vue')
     },
     {
       path: '/myCourtierSpace',
