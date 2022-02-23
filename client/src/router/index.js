@@ -43,7 +43,7 @@ const router = createRouter({
             path: '/login',
             name: 'login',
             component: () =>
-                import ('../views/Login.vue')
+                import ('../components/Login.vue')
         },
         {
             path: '/myClientSpace',
