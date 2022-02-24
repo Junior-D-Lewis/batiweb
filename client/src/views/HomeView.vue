@@ -35,9 +35,9 @@
       </div>
       <h2 class="h2 text-success text-uppercase"> About Us </h2>
      <hr class="hr">
-   
+  
       <div class="row" id="section-aboutUs">
-        <div class="row">
+        <div class="row" id="image">
 
           <div class="col-6">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat delectus eum molestiae provident ipsum nihil ex, vero repellendus maiores in similique inventore est eius iusto ullam odio recusandae labore repellat.</p>
@@ -270,6 +270,13 @@
     }
 }
 /* ****************** */
+#bg_espace{
+  background-image: url('../assets/img-bg-courtier.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* variables */
 :root{
     --flow-space:1rem;
