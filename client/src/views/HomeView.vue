@@ -41,11 +41,11 @@
     <div class="container my-5">
       <!-- Footer -->
       <footer
-              class="text-center text-lg-start text-dark"
+              class="text-center fixed-bottom mb-0 text-lg-start text-dark"
               style="background-color: #ECEFF1"
               >
         <!-- Section: Social media -->
-            <section class="mt-5 bg-primary">
+            <section class="bg-primary">
             <!-- Grid row-->
             <div class="row text-center d-flex justify-content-center pt-5">
               <!-- Grid column -->
@@ -166,12 +166,6 @@
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
-}
-main{
-  background-image:url('../assets/background.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 #bg_espace{
   opacity: .9 !important;

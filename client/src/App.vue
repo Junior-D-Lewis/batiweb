@@ -68,4 +68,12 @@ import { RouterLink, RouterView } from 'vue-router'
   height: 45px;
   margin-left: 5px;
 }
+
+@media only screen and (max-width : 1024px) {
+.nav-item:hover a{
+  background-color: #198754;
+  color: #DBFFE4;
+  transition: 1s;
+}
+}
 </style>
