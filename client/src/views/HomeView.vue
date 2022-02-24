@@ -10,13 +10,13 @@
             <div class="row w-50 mx-auto text-center">
                 <span class="mx-auto my-auto" style="width:75vw;"> 
                     <h1 class="h1 fs-1" style="">
-                        Bienvenue sur vos espaces clients
+                        Bienvenue sur votre espace
                     </h1>
                 </span>
             </div>
-            <div  id="bg_espace" class="opacity-2 bg-light row d-grid text-center w-75 gap-3 mx-auto rounded-3">
-                <h2 class="fs-2 opacity-1">
-                    Trouvons votre espace client !
+            <div  id="bg_espace" class="bg-light row d-grid text-center w-75 gap-3 mx-auto rounded-3">
+                <h2 class="fs-2">
+                    Trouvons votre espace !
                 </h2>
                 <p class="fs-4">Vous etes ?</p>
                 <div role="button" style="background-image: url('@/assets/img-bg-courtier.jpeg' );" class="mb-5 my-auto  btn-courtier btn-outline-primary border border-primary rounded-3 w-50 mx-auto fs-4">
@@ -30,7 +30,7 @@
                     <img class="w-25 rounded-circle" src="@/assets/img-user-client.jpg" alt="client">
                         <br>
                         <b class="fs-6">
-                            PROFESSIONNEL BTP
+                            PROFESSIONNEL DU BTP
                         </b>
                 </div>
             </div>
@@ -168,12 +168,16 @@
     }
 }
 main{
-  background-image:url('../assets/img-bg-courtier.jpeg');
+  background-image:url('../assets/background.jpg');
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 #bg_espace{
-
+  opacity: .9 !important;
+}
+#bg_espace *{
+  opacity: 1 !important;
 }
 /* ****************** */
 /* variables */
