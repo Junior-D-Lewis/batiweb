@@ -1,38 +1,160 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
 
 <template>
 
-    <div>
-      <header class="bg-info m-0" style="height:80px">
-          <RouterLink to="/"><img src="@/assets/logo.jpeg" alt="" class="logo"></RouterLink>
+  <main class="container">
 
-        <nav>
-          <RouterLink to="/address-book">Adresse book</RouterLink>
-          <RouterLink to="/news">News</RouterLink>
-          <RouterLink to="/subscription">Subscription</RouterLink>
-          <RouterLink to="/contract">Contract</RouterLink>
-          <RouterLink to="/tele-insurance">Tele-insurance</RouterLink>
-          <RouterLink to="/login">Login</RouterLink>
-          <RouterLink to="/myClientSpace">Client space</RouterLink>
-        </nav>
-       
-    </header>
-   
+    <div class="container-large d-grid gap-2">
+            <div class="row w-50 mx-auto text-center">
+                <span class="mx-auto my-auto" style="width:75vw;"> 
+                    <h1 class="h1 fs-1" style="">
+                        Bienvenue sur votre espace
+                    </h1>
+                </span>
+            </div>
+            <div  id="bg_espace" class="bg-light row d-grid text-center w-75 gap-3 mx-auto rounded-3">
+                <h2 class="fs-2">
+                    Trouvons votre espace !
+                </h2>
+                <p class="fs-4">Vous etes ?</p>
+                <div role="button" style="background-image: url('@/assets/img-bg-courtier.jpeg' );" class="mb-5 my-auto  btn-courtier btn-outline-primary border border-primary rounded-3 w-50 mx-auto fs-4">
+                    <img class="w-25 rounded-circle" src="@/assets/img-user-courtier.jpg" alt="courtier">
+                    <br>
+                    <b class="fs-6">
+                        COURTIER
+                    </b>
+                </div>
+                <div role="button" style="background-image: url('@/assets/img-bg-client.jpeg' );" class="mb-5 my-auto btn-client  btn-outline-primary border border-primary rounded-3 w-50 mx-auto fs-4">
+                    <img class="w-25 rounded-circle" src="@/assets/img-user-client.jpg" alt="client">
+                        <br>
+                        <b class="fs-6">
+                            PROFESSIONNEL DU BTP
+                        </b>
+                </div>
+            </div>
+        </div>
+          
+        
+            <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5">
+      <!-- Footer -->
+      <footer
+              class="text-center fixed-bottom mb-0 text-lg-start text-dark"
+              style="background-color: #ECEFF1"
+              >
+        <!-- Section: Social media -->
+            <section class="bg-primary">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5">
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">About us</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">REALISATION</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Contact</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </section>
+      
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold  letter-spacing-4">BATIWEB</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px"
+                    />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint suscipit incidunt eveniet unde enim corporis nobis eaque minima et, eos, earum veniam? Maiores dolor nulla totam fuga est, architecto natus?
+                </p>
+              </div>
+              <!-- Grid column -->
 
 
-    <RouterView />
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Useful links</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px"
+                    />
+                <p>
+                  <a href="#!" class="text-dark">Your Account</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-dark">Become an Affiliate</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-dark">Shipping Rates</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-dark">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
 
+              <!-- Grid column -->
+              <div id="image" class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Contact</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px"
+                    />
+                <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
 
-    </div>
-  
+        <!-- Copyright -->
+        <div
+            class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+          © 2022 Copyright:
+          <a class="text-dark" href="#"><i>AllianceTech</i></a
+            >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    <!-- End of .container -->
+          </div>
+  </main>
 </template>
 
 <style scoped>
 @import '@/assets/base.css';
 @import '@/assets/bootstrap/css/bootstrap.min.css';
-@import '@/assets/font-awesome-4.7.0/css/font-awesome.css';
 /* remove animation for those who have remove it */
 @media (prefers-reduced-motion: reduce){
     *,*::before,*::after{
@@ -41,6 +163,12 @@ import { RouterLink, RouterView } from 'vue-router'
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+#bg_espace{
+  opacity: .9 !important;
+}
+#bg_espace *{
+  opacity: 1 !important;
 }
 /* ****************** */
 /* variables */
@@ -196,3 +324,4 @@ nav a:first-of-type {
   }
 }
 </style>
+
