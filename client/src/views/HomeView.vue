@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
 
   <main class="container">
@@ -16,10 +12,10 @@
         </div>
         <div  id="bg_espace" class="bg-light row d-grid text-center w-75 gap-3 mx-auto rounded-3">
             <h2 class="fs-2">
-                Trouvons votre espace client !
+                Trouvons votre espace !
             </h2>
             <p class="fs-4">Vous etes ?</p>
-            <div role="button" style="background-image: url('@/assets/img-bg-courtier.jpeg' );" class="mb-5 my-auto  btn-courtier btn-outline-primary border border-primary rounded-3 w-50 mx-auto fs-4">
+            <div  role="button" style="background-image: url('@/assets/img-bg-courtier.jpeg' );" class="mb-5 my-auto  btn-courtier btn-outline-primary border border-primary rounded-3 w-50 mx-auto fs-4">
                 <img class="w-25 rounded-circle" src="@/assets/img-user-courtier.jpg" alt="courtier">
                 <br>
                 <b class="fs-6">
@@ -154,6 +150,10 @@
       </div>
   </main>
 </template>
+
+<script setup>
+
+</script>
 
 <style scoped>
 @import '@/assets/base.css';
@@ -326,4 +326,3 @@ nav a:first-of-type {
   }
 }
 </style>
-
