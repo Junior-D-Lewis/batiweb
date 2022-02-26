@@ -38,7 +38,7 @@
     <div class="container my-5">
       <!-- Footer -->
       <footer
-              class="text-center fixed-bottom mb-0 text-lg-start text-dark"
+              class="text-center mb-0 text-lg-start text-dark"
               style="background-color: #ECEFF1"
               >
         <!-- Section: Social media -->
