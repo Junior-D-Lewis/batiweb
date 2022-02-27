@@ -3,9 +3,9 @@
       <header>
         <nav class="navbar navbar-expand-lg m-0 p-0">
             <div class="container-fluid p-0">
-              <RouterLink to="/login-courtier" class="navbar-brand">
+              <div class="navbar-brand" >
                 <img src="../assets/logo.jpeg" alt="logo" class="logo">
-              </RouterLink>
+              </div>
               <button class="navbar-toggler bg-success  mr-0 border border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon mr-0"></span>
               </button>
@@ -40,7 +40,7 @@
 
 <script>
 export default {
-
+    name: 'Header'
 }
 </script>
 
@@ -48,4 +48,8 @@ export default {
 @import '@/assets/base.css';
 @import '@/assets/bootstrap/css/bootstrap.css';
 /* @import '@/assets/bootstrap/js/bootstrap.js'; */
+
+.logo{
+  margin-left: 3%;
+}
 </style>

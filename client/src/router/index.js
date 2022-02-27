@@ -46,6 +46,12 @@ const router = createRouter({
             import ('../components/LoginClient.vue')
         },
         {
+            path: '/login-courtier',
+            name: 'login-courtier',
+            component: () =>
+            import ('../components/LoginCourtier.vue')
+        },
+        {
             path: '/myClientSpace',
             name: 'myClientSpace',
             component: () =>
@@ -57,7 +63,9 @@ const router = createRouter({
             component: () =>
                 import ('../components/MyCourtierSpace.vue')
         }
-    ]
+    ],
+
+    
 })
 
 export default router

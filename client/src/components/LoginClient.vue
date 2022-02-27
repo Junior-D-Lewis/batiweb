@@ -35,6 +35,8 @@
 </template>
 
 <script>
+import router from "../router";
+
 export default {
    name: 'Login',
 
@@ -69,11 +71,12 @@ export default {
       }
     },
     async handleForm() {
-     /*  if (this.handleEmail() === true) {
-        let data = { email: this.email, password: this.password };
-         console.log(axios); 
 
-        const response = await axios.post("http://localhost:5000/login", data);
+       if (this.handleEmail() === true) {
+        let data = { email: this.email, password: this.password };
+        // console.log(axios); 
+
+        const response = await axios.post("http://localhost:9000/login", data);
         console.log(response);
 
         if (response.status == 200)
@@ -82,20 +85,23 @@ export default {
           if(response.data.isAdmin){
             localStorage.setItem('isAdmin', 'yes')
           }
-            
-          router.push({ path: "/home", params: data });
+
+          router.push({ path: "/MyClientSpace", params: data });
+          
         }
       } else {
         return;
-      } */
+      } 
 
       console.log('handleForm')
-    },
+    }
+    
   },
 }
 </script>
 
 <style scoped>
+@import '@/assets/base.css';
 :root {
   --normal-font-size: 1rem;
   --small-font-size: 0.75rem;
@@ -117,7 +123,7 @@ export default {
  /*  background-image: url("../assets/background.jpeg"); */ 
   background-blend-mode: multiply;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.883);
+  /* background-color: rgba(0, 0, 0, 0.883); */
 }
 
 @media (min-width: 699px) {
@@ -153,7 +159,7 @@ export default {
   left: 0;
   width: 100%;
   height: calc(100%-20px);
-  border: 1px solid var(--border-color);
+  border: 1px solid white;
   border-radius: 0.5rem;
   outline: none;
   padding: 1rem;
@@ -178,8 +184,8 @@ small {
   padding: 1rem 2rem;
   outline: none;
   border: none;
-  background-color: var(--first-color);
-  color: #fff;
+  background-color:#0069B5;
+  color: aqua;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: 0.3s;
@@ -204,6 +210,11 @@ small {
   font-size: var(--small-font-size);
   font-weight: 500;
   z-index: 10;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
 }
 
 .form__input:focus {
