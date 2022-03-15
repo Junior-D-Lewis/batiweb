@@ -47,6 +47,9 @@ export default {
     };
   },
   methods: {
+     setLogin(){
+       this.$store.commit('isLogin')
+     },
     setErrorFor(input, message) {
       input.style.color = "red";
       input.innerText = message;
@@ -81,6 +84,7 @@ export default {
 
         if (response.status == 200)
         {
+          this.setLogin()
           localStorage.setItem('login', 'yes');
           if(response.data.isAdmin){
             localStorage.setItem('isAdmin', 'yes')

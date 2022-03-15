@@ -178,6 +178,13 @@ import { RouterLink, RouterView } from 'vue-router'
         scroll-behavior: auto !important;
     }
 }
+
+main{
+  background-image: url('src/assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #bg_espace{
   opacity: .9 !important;
 }

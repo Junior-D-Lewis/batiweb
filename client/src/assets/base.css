@@ -242,3 +242,12 @@ nav {
 
 }
 */
+
+.next{
+    margin: 3% 10%;
+    float: right;
+}
+
+.btnNext{
+    background-color: #0069B5;
+}

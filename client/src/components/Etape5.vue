@@ -1,6 +1,6 @@
 <template>
   <main>
-      kefhojzgobfo
+      <RouterLink to="/etape6" class="next"><button class="btnNext">Suivant</button></RouterLink>
   </main>
 </template>
 
