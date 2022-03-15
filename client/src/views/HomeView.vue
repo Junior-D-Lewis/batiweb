@@ -16,20 +16,26 @@
                     Trouvons votre espace !
                 </h2>
                 <p class="fs-4">Vous etes ?</p>
-                <div role="button" style="background-image: url('@/assets/img-bg-courtier.jpeg' );" class="mb-5 my-auto  btn-courtier btn-outline-primary border border-primary rounded-3 w-50 mx-auto fs-4">
+
+                <RouterLink to="/login-courtier" class="nav-link">
+                  <div role="button" class="mb-5 my-auto  btn-courtier btn-outline-primary border border-primary rounded-3 w-50 mx-auto fs-4">
                     <img class="w-25 rounded-circle" src="../assets/img-user-courtier.jpg" alt="courtier">
                     <br>
                     <b class="fs-6">
                         COURTIER
                     </b>
-                </div>
-                <div role="button" style="background-image: url('@/assets/img-bg-client.jpeg' );" class="mb-5 my-auto btn-client  btn-outline-primary border border-primary rounded-3 w-50 mx-auto fs-4">
+                  </div>
+                </RouterLink>
+                
+                <RouterLink to="/login-client" class="nav-link">
+                  <div role="button" class="mb-5 my-auto btn-client  btn-outline-primary border border-primary rounded-3 w-50 mx-auto fs-4">
                     <img class="w-25 rounded-circle" src="../assets/img-user-client.jpg" alt="client">
                         <br>
                         <b class="fs-6">
                             PROFESSIONNEL DU BTP
                         </b>
                 </div>
+                </RouterLink>
             </div>
         </div>
           
@@ -153,6 +159,7 @@
 </template>
 
 <script>
+import { RouterLink, RouterView } from 'vue-router'
   export default {
     name: 'HomView',
   }
@@ -171,6 +178,13 @@
         scroll-behavior: auto !important;
     }
 }
+
+main{
+  background-image: url('src/assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #bg_espace{
   opacity: .9 !important;
 }

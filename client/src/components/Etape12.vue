@@ -1,8 +1,6 @@
 <template>
   <main>
-    
-
-      <RouterView/>
+       <RouterLink to="/" class="next"><button class="btnNext">Finaliser</button></RouterLink>
   </main>
 </template>
 
@@ -14,6 +12,5 @@ export default {
 
 <style scoped>
 @import '@/assets/base.css';
-@import '@/assets/bootstrap/css/bootstrap.css';
-/* @import '@/assets/bootstrap/js/bootstrap.js'; */
+
 </style>
