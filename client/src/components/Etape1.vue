@@ -1,6 +1,7 @@
 <template>
     <div id="etape1">
-     <header style="background-color: blue;"><h2> 1 - IDENTIFICATION DU DEMANDEUR D'ASSURANCE </h2> </header>
+    <header-vue/>
+     <header class="bg-info text-center bg-gradient"><h2> 1 - IDENTIFICATION DU DEMANDEUR D'ASSURANCE </h2> </header>
    <div class="tout">
        <div class="uphere">
            <form>
@@ -223,6 +224,8 @@
 <script setup>
 import MyClientSpace from './MyClientSpace.vue';
 import { RouterLink, RouterView } from 'vue-router'
+import HeaderVue from '/src/components/Header.vue'
+
 
 $(document).ready(function() {
 

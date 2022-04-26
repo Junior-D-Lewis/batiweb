@@ -1,9 +1,12 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import HeaderVue from '/src/components/Header.vue'
+
 </script>
 
 <template>
     <div id="etape10">
+    <header-vue/>
          <div class="card">
               <div class="card-body">
                             <h5 class="card-title"><span>6-</span>LISTE DE TOUS LES INTERVENANTS À L’OPÉRATION DE CONSTRUCTION y compris les sous-traitants

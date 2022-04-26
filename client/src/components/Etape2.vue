@@ -1,5 +1,6 @@
 <template>
     <div id="etape2">
+    <header-vue/>
       <header>
         <h2>
             2 - QUALITÉ DU DEMANDEUR D’ASSURANCE
@@ -69,6 +70,7 @@
 </template>
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import HeaderVue from '/src/components/Header.vue'
 $(document).ready(function() {
 
    

@@ -1,5 +1,6 @@
 <template>
     <div id="etape3">
+    <header-vue/>
        <header>
         <h2>
             3 - IMMIXTION DU MAÎTRE D’OUVRAGE
@@ -61,6 +62,7 @@ partie des travaux dans le cadre de l’opération à assurer :
 </template>
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import HeaderVue from '/src/components/Header.vue'
 $(document).ready(function() {
 
    

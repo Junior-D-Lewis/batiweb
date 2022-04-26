@@ -1,9 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import HeaderVue from '/src/components/Header.vue'
 </script>
 
 <template>
     <div id="etape11">
+    <header-vue/>
         <div class="card">
          <div class="card">
             <div class="card-body">

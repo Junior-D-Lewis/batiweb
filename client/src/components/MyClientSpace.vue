@@ -1,13 +1,16 @@
 <template>
   <main>
-    
-
+    <header-vue/>
       <RouterView/>
   </main>
 </template>
 
 <script>
+import HeaderVue from '/src/components/Header.vue'
 export default {
+  components:{
+    HeaderVue,
+  },
 
 }
 </script>

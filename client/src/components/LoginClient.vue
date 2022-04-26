@@ -81,15 +81,13 @@ export default {
         // console.log(axios); 
 
         const response = await axios.post("http://localhost:9000/login", data);
-        console.log(response);
+        //console.log(response);
 
         if (response.status == 200)
         {
-          this.setLogin();
-          localStorage.setItem('login', 'yes');
-          if(response.data.isAdmin){
-            localStorage.setItem('isAdmin', 'yes')
-          }
+         // this.setLogin();
+    localStorage.setItem('isLog', 'true');
+    console.log(localStorage)
 
           router.push({ path: "/MyClientSpace", params: data });
           

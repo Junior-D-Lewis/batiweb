@@ -17,10 +17,10 @@ const corsOptions ={
   app.use(express.json())
 
 //Path.resolve to convert Relative path to Absolute file 
-app.use(express.static(path.resolve('../batiweb/client')))
+app.use(express.static(path.resolve('client')))
 
 app.get('/', (req, res) => {
-    res.sendFile('/index.html')
+    res.sendFile('index.html')
 })
 
 app.use('/login', loginClient())
