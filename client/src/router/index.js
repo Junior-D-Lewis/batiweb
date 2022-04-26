@@ -53,6 +53,12 @@ const router = createRouter({
             import ('../views/Portefeuille.vue')
         },
         {
+            path: '/suivi',
+            name: 'suivi',
+            component: () =>
+            import ('../components/Suivi.vue')
+        },
+        {
             path: '/login-courtier',
             name: 'login-courtier',
             component: () =>
@@ -142,7 +148,13 @@ const router = createRouter({
             name: 'etape12',
             component: () =>
                 import ('../components/Etape12.vue')
-        }
+        },
+        {
+            path: '/doc-admin',
+            name: 'doc-admin',
+            component: () =>
+            import ('../components/DocAdmin.vue')
+        },
     ],
 
     
