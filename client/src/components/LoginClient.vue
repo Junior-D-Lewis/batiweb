@@ -80,10 +80,11 @@ export default {
         let data = { email: this.email, password: this.password };
         // console.log(axios); 
 
-        const response = await axios.post("http://localhost:9000/login", data);
+       // const response = await axios.post("http://localhost:9000/login", data);
         //console.log(response);
+          router.push({ path: "/MyClientSpace", params: data });
 
-        if (response.status == 200)
+      /*  if (response.status == 200)
         {
          // this.setLogin();
     localStorage.setItem('isLog', 'true');
@@ -92,7 +93,7 @@ export default {
           router.push({ path: "/MyClientSpace", params: data });
           
         }
-      } else {
+      } else {*/
         return;
       } 
     }

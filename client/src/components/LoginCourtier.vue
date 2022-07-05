@@ -79,10 +79,12 @@ export default {
         let data = { email: this.email, password: this.password };
         // console.log(axios); 
 
-        const response = await axios.post("http://localhost:9000/login", data);
-        console.log(response);
+        //const response = await axios.post("http://localhost:9000/login", data);
+        //console.log(response);
+        
+          router.push({ path: "/MyCourtierSpace", params: data });
 
-        if (response.status == 200)
+      /*  if (response.status == 200)
         {
           this.setLogin()
           localStorage.setItem('login', 'yes');
@@ -93,7 +95,7 @@ export default {
           router.push({ path: "/MyCourtierSpace", params: data });
           
         }
-      } else {
+      } else {*/
         return;
       } 
 

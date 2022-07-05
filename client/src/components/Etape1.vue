@@ -133,13 +133,7 @@
                             <input type="text" class="form-control" placeholder="N° Sociétaire" aria-label="Username" aria-describedby="basic-addon1">
                           </div></td>
                         </tr>
-                    </tbody>
-                    
-
-                        
-
-                        
-                    
+                    </tbody>  
                 </table>
 
                 <table class="table">

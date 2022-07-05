@@ -34,7 +34,7 @@
   </ul>
 </div>
 <div class="btn-group">
-   <RouterLink to="/news" class="btn bg-ligth parti" aria-current="page"> Gestion du portefeuille</RouterLink>
+   <RouterLink to="/portefeuille" class="btn bg-ligth parti" aria-current="page"> Gestion du portefeuille</RouterLink>
 </div>
 <div class="btn-group">
   <button type="button" class="btn bg-ligth dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -87,7 +87,7 @@ export default {
 /* @import '@/assets/bootstrap/js/bootstrap.js'; */
 
 .logo{
-  margin-left: 3%;
+  margin-left: 0%;
 }
 .parti{
   text-decoration: none;
