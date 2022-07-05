@@ -1,0 +1,1 @@
+import{_ as o,H as r}from"./index.c89949e7.js";import{r as a,o as n,c as t,b as s}from"./vendor.0aad7096.js";const c={components:{HeaderVue:r}};function p(_,m,d,u,f,l){const e=a("header-vue");return n(),t("main",null,[s(e)])}var $=o(c,[["render",p]]);export{$ as default};
